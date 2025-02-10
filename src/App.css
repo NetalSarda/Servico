@@ -1,0 +1,26 @@
+.App{
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  background: #2D4849;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and(max-width:800px) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}

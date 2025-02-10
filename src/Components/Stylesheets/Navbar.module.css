@@ -1,0 +1,189 @@
+.container {
+    overflow-x: clip;
+    z-index: 20;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #C26964;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.burgerButton {
+    display: none;
+}
+
+.sliderContainer{
+    transition: 0.4s;
+    position: absolute;
+    left: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    top: 50px;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.sliderContainer p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    height: 40px;
+}
+
+.screen {
+    display: none;
+}
+
+.navList a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navList img {
+    aspect-ratio: 1;
+    height: 100%;
+    margin: 5px;
+}
+
+.navList {
+    min-width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .navList {
+        display: none;
+    }
+
+
+    .burgerButton hr {
+        width: 100%;
+    }
+
+    .burgerContainer {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+
+    .burgerButton {
+        z-index: 2;
+        margin: 20px 20px;
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: static;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+    }
+
+    .burgerButton hr {
+        background-color: white;
+        color: white;
+        border-radius: 10px;
+        height: 3px;
+        border: 1px solid rgb(1, 1, 1);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .burgerButtonActive hr {
+        transition: 0.4s;
+        height: 2px;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid black;
+        top: calc(50% - 2px);
+        left: 5px;
+        width: calc(100% - 10px);
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+
+    .burgerButtonActive hr:nth-child(1) {
+        display: none;
+    }
+
+    .burgerButtonActive hr:nth-child(2) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+
+    .burgerButtonActive hr:nth-child(3) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
+    .screen {
+        position: absolute;
+        transition: 0.4s;
+        left: 0;
+        top: 0;
+        display: flex;
+        padding: 30% 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+
+    .burgerButtonActive {
+        position: relative;
+        z-index: 2;
+    }
+
+    .screenActive {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+
+
+    .container {
+        overflow-x:clip;
+        height: auto;
+        background-color: transparent;
+    }
+}
