@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("../../Assets/landingimage.png");
+    /* background: url("../../Assets/landingimage.png"); */
     background-size: cover;
     width: 100%;
 }
